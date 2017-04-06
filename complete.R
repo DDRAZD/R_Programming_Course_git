@@ -11,7 +11,7 @@ complete <-function(directory, id=1:332){
         for (i in 1:number_of_monitors_to_read) {
                 
                 if(id[i]<10){file_number<-paste("00",id[i],sep = "")}
-                else if (id[i]>=100) {file_number<-i}
+                else if (id[i]>=100) {file_number<-id[i]}
                 else {file_number<-paste("0",id[i],sep = "")}
                 
                 file_name                      <- paste(directory,"/",file_number,".csv", sep="")
